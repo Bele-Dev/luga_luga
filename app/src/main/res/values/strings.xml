@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Lugaluga</string>
+    <string name="esqueci"><u>Esqueci a senha</u></string>
+    <string name="criar"><u>Criar uma conta</u></string>
+    <string name="email">E-mail</string>
+    <string name="senha">Senha</string>
+    <string name="logar">Login</string>
 </resources>

@@ -4,25 +4,28 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity">
+    tools:context=".view.LoginActivity">
 
     <ImageView
         android:id="@+id/LoginImg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@drawable/logoapp" />
+        app:srcCompat="@drawable/logoapp" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/input_email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="e-mail"
+        android:hint="@string/email"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/LoginImg">
+        app:layout_constraintTop_toBottomOf="@+id/LoginImg"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="30dp">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
@@ -34,11 +37,13 @@
         android:id="@+id/input_senha"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="senha"
+        android:hint="@string/senha"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/input_email"
-        app:endIconMode="password_toggle">
+        app:endIconMode="password_toggle"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="30dp">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
@@ -47,17 +52,54 @@
 
     </com.google.android.material.textfield.TextInputLayout>
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/input_senha"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/esqueci"
+        android:gravity="center"
+        android:textSize="15dp"
+        android:id="@+id/esqueciM"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/pink"
+        >
+
+
+    </TextView>
+
     <Button
         android:id="@+id/botao"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Logar"
+        android:text="@string/logar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/input_senha"
-        android:textSize="20dp">
+        app:layout_constraintTop_toBottomOf="@+id/esqueciM"
+        android:textSize="25dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/pink"
+        >
 
     </Button>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/criar"
+        android:gravity="center"
+        android:textSize="15dp"
+        android:id="@+id/criarC"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/pink"
+        >
+
+
+    </TextView>
+
 
 
 
